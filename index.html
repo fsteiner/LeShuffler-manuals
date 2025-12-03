@@ -5,70 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeShuffler Manuals</title>
     <style>
-        /* Define a clean, professional look (CSS from previous answer) */
+        /* Global Styles based on Brand Kit */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            background-color: #f6f8fa; /* Light background */
-            color: #24292f; /* Dark text */
+            /* Using Helvetica, falling back to other sans-serif */
+            font-family: 'Helvetica Bold', Helvetica, Arial, sans-serif;
+            background-color: #f6f8fa; 
+            color: #24292f; /* Black/Dark text */
             margin: 0;
             padding: 20px;
-            text-align: center; /* Center content on the page */
+            text-align: center;
+            font-weight: bold; /* Applies 'bold' to all text using the Helvetica font */
         }
 
         .container {
             max-width: 600px;
             margin: 50px auto;
             padding: 30px;
-            background-color: #ffffff; /* White card */
+            background-color: #ffffff; /* White background */
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.1); /* Subtle shadow */
+            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.1); 
         }
 
+        /* Logo Area Styling */
+        .logo-area {
+            margin-bottom: 30px;
+        }
+
+        /* IMPORTANT: Replace this placeholder with your actual <img> tag */
+        .logo-area img {
+            max-width: 150px; /* Adjust size as needed */
+            height: auto;
+        }
+        
         h1 {
-            font-size: 26px;
-            color: #0366d6; /* Blue heading */
+            font-size: 28px;
+            color: #E71919; /* Red heading */
             margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: normal; /* Override bold for regular paragraph text */
         }
         
         /* Button Grouping */
         .button-group {
-            display: flex; /* Arrange buttons side-by-side */
-            gap: 15px; /* Space between buttons */
+            display: flex;
+            gap: 15px;
             margin: 20px auto;
-            max-width: 400px; /* Optional: Constrain group width */
-            justify-content: center; /* Center buttons within the group */
+            max-width: 400px;
+            justify-content: center;
         }
 
         /* Base Button Styling */
         .manual-button {
             text-decoration: none;
-            flex-grow: 1; /* Allow buttons to grow and fill space */
+            flex-grow: 1;
         }
         
         .manual-button button {
             padding: 12px 20px;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: bold; /* Ensure button text is bold */
             border: none;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.1s;
             width: 100%; 
+            text-transform: uppercase;
         }
 
-        /* Primary Button (Preview) */
+        /* Primary Button (Preview) - Uses Brand Red */
         .manual-button.primary button {
-            background-color: #0366d6;
+            background-color: #E71919;
             color: white;
         }
         
         .manual-button.primary button:hover {
-            background-color: #005cc5;
+            background-color: #c91616; /* Slightly darker red on hover */
         }
 
-        /* Secondary Button (Download) */
+        /* Secondary Button (Download) - Uses Brand Black/White */
         .manual-button.secondary button {
-            background-color: #f3f4f6; /* Light gray background */
+            background-color: #f3f4f6; 
             color: #24292f;
             border: 1px solid #d0d7de;
         }
@@ -80,14 +98,20 @@
         .note {
             margin-top: 25px;
             font-size: 14px;
-            color: #6a737d; /* Gray note text */
+            color: #6a737d; 
             border-top: 1px solid #e1e4e8;
             padding-top: 15px;
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        
+        <div class="logo-area">
+            <p style="font-size: 36px; color: #E71919; margin: 0;">**LOGO HERE**</p> 
+            </div>
+
         <h1>LeShuffler Operation Manual</h1>
         
         <p>
