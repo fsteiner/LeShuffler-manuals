@@ -7,14 +7,13 @@
     <style>
         /* Global Styles based on Brand Kit */
         body {
-            /* Using Helvetica, falling back to other sans-serif */
             font-family: 'Helvetica Bold', Helvetica, Arial, sans-serif;
             background-color: #000000; /* BLACK BACKGROUND */
-            color: #eeeeee /* LIGHT GREY TEXT */
+            color: #ffffff; /* WHITE TEXT (Applied to all body elements) */
             margin: 0;
             padding: 20px;
             text-align: center;
-            font-weight: bold; /* Applies 'bold' to all text using the Helvetica font */
+            font-weight: bold;
         }
 
         .container {
@@ -23,8 +22,9 @@
             padding: 30px;
             background-color: #000000; /* BLACK CONTAINER BACKGROUND */
             border-radius: 12px;
-            /* Subtly change box-shadow for dark mode if needed, but keeping original for now */
             box-shadow: 0 4px 12px rgba(27, 31, 35, 0.4); 
+            /* FIX: Ensure container text color is white, though body should handle it */
+            color: #ffffff; 
         }
 
         /* Logo Area Styling */
@@ -33,18 +33,20 @@
         }
 
         .logo-area img {
-            max-width: 300px; /* Adjust size as needed */
+            max-width: 300px;
             height: auto;
         }
         
         h1 {
             font-size: 28px;
-            color: #ffffff; /* White heading */
+            color: #E71919; /* Red heading - unchanged */
             margin-bottom: 20px;
         }
 
         p {
-            font-weight: normal; /* Override bold for regular paragraph text */
+            /* Ensure all general paragraph text is white by inheriting from body/container */
+            color: inherit; /* This makes it use the parent element's color (white) */
+            font-weight: normal; 
         }
         
         /* Button Grouping */
@@ -65,7 +67,7 @@
         .manual-button button {
             padding: 12px 20px;
             font-size: 16px;
-            font-weight: bold; /* Ensure button text is bold */
+            font-weight: bold;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -81,26 +83,26 @@
         }
         
         .manual-button.primary button:hover {
-            background-color: #c91616; /* Slightly darker red on hover */
+            background-color: #c91616;
         }
 
         /* Secondary Button (Download) - Updated for Dark Theme */
         .manual-button.secondary button {
-            background-color: #1a1a1a; /* Dark gray/off-black background */
+            background-color: #1a1a1a;
             color: #ffffff; /* White text */
-            border: 1px solid #333333; /* Darker border */
+            border: 1px solid #333333;
         }
 
         .manual-button.secondary button:hover {
-            background-color: #444444; /* Lighter gray on hover */
+            background-color: #333333;
         }
 
         /* Note Section - Updated for Dark Theme */
         .note {
             margin-top: 25px;
             font-size: 14px;
-            color: #eeeeee; /* Light gray note text */
-            border-top: 1px solid #333333; /* Dark border */
+            color: #aaaaaa; /* Light gray note text (Specific override) */
+            border-top: 1px solid #333333;
             padding-top: 15px;
             font-weight: normal;
         }
@@ -110,41 +112,21 @@
     <div class="container">
         
         <div class="logo-area">
-            <p style="font-size: 36px; color: #ffffff; margin: 0;">
+            <p style="font-size: 36px; color: #E71919; margin: 0;">
                 
             <img src="/assets/Logo_WhiteR.png" alt="LeShuffler Logo">
             
             </p> 
         </div>
 
-        <h1>Quick Start Guide </h1>
+        <h1>LeShuffler Operation Manual</h1>
         
         <p>
-            Get the latest Quick Start Guide for LeShuffler.
+            Get the latest operation manual for LeShuffler below.
         </p>
         
         <div class="button-group">
-            <a href="/Loading cards.pdf" class="manual-button secondary" target="_blank">
-                <button>
-                    📖 Preview Guide
-                </button>
-            </a>
-            
-            <a href="/Loading cards.pdf" class="manual-button secondary" download>
-                <button>
-                    ⬇️ Download PDF
-                </button>
-            </a>
-        </div>
-
-                <h1>Operation Manual</h1>
-        
-        <p>
-            Get the latest Operation Manual for LeShuffler.
-        </p>
-        
-        <div class="button-group">
-            <a href="/Loading cards.pdf" class="manual-button secondary" target="_blank">
+            <a href="/Loading cards.pdf" class="manual-button primary" target="_blank">
                 <button>
                     📖 Preview Manual
                 </button>
