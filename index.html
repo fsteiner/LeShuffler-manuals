@@ -9,8 +9,8 @@
         body {
             /* Using Helvetica, falling back to other sans-serif */
             font-family: 'Helvetica Bold', Helvetica, Arial, sans-serif;
-            background-color:  #000000; /* #f6f8fa;  */
-            color: #24292f; /* Black/Dark text */
+            background-color: #000000; /* BLACK BACKGROUND */
+            color: #ffffff; /* WHITE TEXT */
             margin: 0;
             padding: 20px;
             text-align: center;
@@ -21,9 +21,10 @@
             max-width: 600px;
             margin: 50px auto;
             padding: 30px;
-            background-color:  #000000; /*  #ffffff; White background */
+            background-color: #000000; /* BLACK CONTAINER BACKGROUND */
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.1); 
+            /* Subtly change box-shadow for dark mode if needed, but keeping original for now */
+            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.4); 
         }
 
         /* Logo Area Styling */
@@ -31,7 +32,6 @@
             margin-bottom: 30px;
         }
 
-        /* IMPORTANT: Replace this placeholder with your actual <img> tag */
         .logo-area img {
             max-width: 300px; /* Adjust size as needed */
             height: auto;
@@ -39,7 +39,7 @@
         
         h1 {
             font-size: 28px;
-            color: #E71919; /* Red heading */
+            color: #E71919; /* Red heading - unchanged */
             margin-bottom: 20px;
         }
 
@@ -84,22 +84,23 @@
             background-color: #c91616; /* Slightly darker red on hover */
         }
 
-        /* Secondary Button (Download) - Uses Brand Black/White */
+        /* Secondary Button (Download) - Updated for Dark Theme */
         .manual-button.secondary button {
-            background-color: #f3f4f6; 
-            color: #24292f;
-            border: 1px solid #d0d7de;
+            background-color: #1a1a1a; /* Dark gray/off-black background */
+            color: #ffffff; /* White text */
+            border: 1px solid #333333; /* Darker border */
         }
 
         .manual-button.secondary button:hover {
-            background-color: #e5e5e5;
+            background-color: #333333; /* Lighter gray on hover */
         }
 
+        /* Note Section - Updated for Dark Theme */
         .note {
             margin-top: 25px;
             font-size: 14px;
-            color: #6a737d; 
-            border-top: 1px solid #e1e4e8;
+            color: #aaaaaa; /* Light gray note text */
+            border-top: 1px solid #333333; /* Dark border */
             padding-top: 15px;
             font-weight: normal;
         }
@@ -114,7 +115,7 @@
             <img src="/assets/Logo_WhiteR.png" alt="LeShuffler Logo">
             
             </p> 
-            </div>
+        </div>
 
         <h1>LeShuffler Operation Manual</h1>
         
