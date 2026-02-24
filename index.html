@@ -22,9 +22,9 @@
             padding: 30px;
             background-color: #000000; /* BLACK CONTAINER BACKGROUND */
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.4); 
+            box-shadow: 0 4px 12px rgba(27, 31, 35, 0.4);
             /* FIX: Ensure container text color is white, though body should handle it */
-            color: #ffffff; 
+            color: #ffffff;
         }
 
         /* Logo Area Styling */
@@ -36,7 +36,7 @@
             max-width: 300px;
             height: auto;
         }
-        
+
         h1 {
             font-size: 28px;
             color: #E71919; /* Red heading - unchanged */
@@ -46,9 +46,9 @@
         p {
             /* Ensure all general paragraph text is white by inheriting from body/container */
             color: inherit; /* This makes it use the parent element's color (white) */
-            font-weight: normal; 
+            font-weight: normal;
         }
-        
+
         /* Button Grouping */
         .button-group {
             display: flex;
@@ -63,7 +63,7 @@
             text-decoration: none;
             flex-grow: 1;
         }
-        
+
         .manual-button button {
             padding: 12px 20px;
             font-size: 16px;
@@ -72,7 +72,7 @@
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.1s;
-            width: 100%; 
+            width: 100%;
             text-transform: uppercase;
         }
 
@@ -81,7 +81,7 @@
             background-color: #E71919;
             color: white;
         }
-        
+
         .manual-button.primary button:hover {
             background-color: #c91616;
         }
@@ -97,6 +97,25 @@
             background-color: #333333;
         }
 
+        /* Section Divider */
+        .section {
+            border-top: 1px solid #333333;
+            padding-top: 25px;
+            margin-top: 25px;
+        }
+
+        /* QR Code */
+        .qr-code {
+            margin: 20px auto 10px;
+            max-width: 180px;
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         /* Note Section - Updated for Dark Theme */
         .note {
             margin-top: 25px;
@@ -110,43 +129,85 @@
 </head>
 <body>
     <div class="container">
-        
+
         <div class="logo-area">
             <p style="font-size: 36px; color: #FFFFFF; margin: 0;">
-                
+
             <img src="assets/Logo_WhiteR.png" alt="LeShuffler Logo">
-            
-            </p> 
+
+            </p>
         </div>
 
-        <h1> Operations Manual</h1>
-        
-        <p>
-            Get the latest version of the Operations Manual.
-        </p>
-        
-        <div class="button-group">
-            <a href="https://docs.google.com/gview?url=https://github.com/fsteiner/LeShuffler-manuals/releases/latest/download/LeShuffler_Operations_Manual_EN.pdf" class="manual-button secondary" target="_blank">
-                <button>
-                    📖 Preview
-                </button>
-            </a>
+        <!-- Operations Manual -->
+        <div class="section">
+            <h1>Operations Manual</h1>
 
-            <a href="https://github.com/fsteiner/LeShuffler-manuals/releases/latest/download/LeShuffler_Operations_Manual_EN.pdf" class="manual-button secondary" download>
-                <button>
-                    ⬇️ Download
-                </button>
-            </a>
+            <p>
+                Get the latest version of the Operations Manual.
+            </p>
+
+            <div class="button-group">
+                <a href="https://docs.google.com/gview?url=https://github.com/fsteiner/LeShuffler-manuals/releases/latest/download/LeShuffler_Operations_Manual_EN.pdf" class="manual-button secondary" target="_blank">
+                    <button>
+                        Preview
+                    </button>
+                </a>
+
+                <a href="https://github.com/fsteiner/LeShuffler-manuals/releases/latest/download/LeShuffler_Operations_Manual_EN.pdf" class="manual-button secondary" download>
+                    <button>
+                        Download
+                    </button>
+                </a>
+            </div>
         </div>
 
-        
-        
-      
-        
-      
-        
+        <!-- Firmware Update -->
+        <div class="section">
+            <h1>Firmware Update</h1>
+
+            <p>
+                Update LeShuffler to the latest firmware version.
+            </p>
+
+            <div class="button-group">
+                <a href="https://github.com/fsteiner/LeShuffler_firmware/releases/latest/download/LeShuffler_Update.zip" class="manual-button secondary" download>
+                    <button>
+                        Download Update Files
+                    </button>
+                </a>
+
+                <a href="firmware-update.html" class="manual-button secondary">
+                    <button>
+                        Update Instructions &rarr;
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="section">
+            <h1>Community</h1>
+
+            <p>
+                Join the community for updates, tips, and support.
+            </p>
+
+            <div class="qr-code">
+                <img src="assets/qr-discord.png" alt="Discord QR Code">
+            </div>
+
+            <div class="button-group">
+                <a href="https://discord.leshuffler.com" class="manual-button secondary" target="_blank">
+                    <button>
+                        Join Discord &rarr;
+                    </button>
+                </a>
+            </div>
+        </div>
+
         <p class="note">
-            © LeShuffler® 2026
+            &copy; LeShuffler&reg; 2026
         </p>
     </div>
 </body>
+</html>
