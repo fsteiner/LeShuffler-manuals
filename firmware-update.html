@@ -207,7 +207,7 @@
                 <ul>
                     <li>PC running Windows 11</li>
                     <li>USB-C to USB-C cable (included with LeShuffler)<br>
-                        <span class="detail">&mdash; or USB-C to USB-A if your computer does not have USB-C</span></li>
+                        <span class="detail">&mdash; or USB-C to USB-A if the port supports BC&nbsp;1.2 (see Troubleshooting for details)</span></li>
                 </ul>
 
                 <h2>Step 1 &mdash; Download</h2>
@@ -228,7 +228,7 @@
                 </ul>
 
                 <h2>Step 2 &mdash; Connect</h2>
-                <p>Connect LeShuffler to the computer using the USB cable.</p>
+                <p>Connect LeShuffler to a <strong>USB-C port</strong> on your computer using the USB cable. USB-C ports provide 15W, well above the 7W LeShuffler needs in update mode.</p>
 
                 <h2>Step 3 &mdash; Enter Update Mode</h2>
                 <p>With the device OFF, hold both the &#x2713; (Enter) and &#x2717; (Escape) buttons simultaneously, then turn on the power switch. Keep holding for about 2 seconds.</p>
@@ -265,6 +265,18 @@
                     <ul>
                         <li>LeShuffler is safe &mdash; the previous firmware is preserved until a new update completes successfully.</li>
                         <li>Power off the device, then repeat from Step 3.</li>
+                    </ul>
+                </div>
+
+                <div class="troubleshooting-item">
+                    <p class="issue">Machine reboots or update is interrupted (power instability)</p>
+                    <p>In update mode, LeShuffler draws about 7W (5V &times; 1.4A). A USB-C port delivers 15W (5V &times; 3A) and will work reliably. Standard USB-A 2.0 ports deliver only 2.5W and USB-A 3.0 ports only 4.5W &mdash; neither is enough. USB-A ports that support BC&nbsp;1.2 can deliver 7.5W, which is sufficient.</p>
+                    <ul>
+                        <li>Use a <strong>USB-C port</strong> on your computer (recommended).</li>
+                        <li>If using USB-A, make sure the port supports <strong>BC&nbsp;1.2</strong> (7.5W), or use a powered USB hub.</li>
+                        <li>Try a different USB port &mdash; power capability varies between ports, even on the same computer.</li>
+                        <li>Try a shorter USB-C to USB-C cable with good power rating (at least 20W) and certified for data transfer. The 2m cable included with LeShuffler was chosen for use with the 15V power supply and may cause voltage drop on 5V USB. A short cable like <a href="https://amzn.eu/d/0elKQKEo" style="color: #E71919;" target="_blank">this 30cm model</a> (<a href="https://a.co/d/0e6NgAQ6" style="color: #E71919;" target="_blank">US link</a>) works well.</li>
+                        <li>If none of the above helps, use a powered USB hub. We recommend the <a href="https://www.apple.com/shop/product/hr862zm/b/belkin-connect-usb-c-data-charge-adapter" style="color: #E71919;" target="_blank">Belkin Connect USB-C adapter</a> available at Apple stores worldwide.</li>
                     </ul>
                 </div>
 
