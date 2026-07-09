@@ -206,9 +206,10 @@
 
                 <h2>What You Need</h2>
                 <ul>
-                    <li>PC running Windows 11</li>
-                    <li>USB-C to USB-C cable (included with LeShuffler)<br>
-                        <span class="detail">&mdash; or USB-C to USB-A if the port supports BC&nbsp;1.2 (see Troubleshooting for details)</span></li>
+                    <li>A Windows PC. <strong>Macs are not supported</strong> &mdash; Apple's USB handling is incompatible with the update process.<br>
+                        <span class="detail">&mdash; Windows 11 is what we test on. Windows 10 is untested, though some users report success with it.</span></li>
+                    <li>A USB port that can supply about 7W &mdash; a USB-C port, or a USB-A port that supports BC&nbsp;1.2 (see Troubleshooting for details)</li>
+                    <li>USB-C to USB-C cable (included with LeShuffler)</li>
                 </ul>
 
                 <h2>Step 1 &mdash; Download</h2>
@@ -274,9 +275,26 @@
                         <li>Try a different USB port &mdash; power capability varies between ports, even on the same computer.</li>
                         <li>Use a <strong>USB-C port</strong> (recommended). If using USB-A, make sure the port supports <strong>BC&nbsp;1.2</strong> (7.5W), or use a powered USB hub.</li>
                         <li>Try a shorter USB-C to USB-C cable with good power rating (at least 20W) and certified for data transfer. The 2m cable included with LeShuffler was chosen for use with the 15V power supply and may cause voltage drop on 5V USB. This 30cm model works well (<a href="https://amzn.eu/d/0elKQKEo" style="color: #E71919;" target="_blank">EU link</a> &mdash; <a href="https://a.co/d/0e6NgAQ6" style="color: #E71919;" target="_blank">US link</a>).</li>
-                        <li>If none of the above helps, use a powered USB hub. We recommend the <a href="https://www.apple.com/shop/product/hr862zm/b/belkin-connect-usb-c-data-charge-adapter" style="color: #E71919;" target="_blank">Belkin Connect USB-C adapter</a> available at Apple stores worldwide.</li>
+                        <li>If none of the above helps, use a powered USB hub &mdash; one with its own mains adapter. Choose a model whose downstream ports support <strong>BC&nbsp;1.2 charging</strong>: a plain data hub stays capped at 2.5W/4.5W however large its power adapter, so results vary between hubs.</li>
                     </ul>
-                    <p class="detail">In update mode, LeShuffler draws about 7W (5V &times; 1.4A). A USB-C port delivers 15W (5V &times; 3A) and will work reliably. Standard USB-A 2.0 ports deliver only 2.5W and USB-A 3.0 ports only 4.5W &mdash; neither is enough. USB-A ports that support BC&nbsp;1.2 can deliver 7.5W, which is sufficient.<br>To check the power rating of your USB ports on Windows: open Device Manager &rarr; Universal Serial Bus controllers &rarr; right-click your USB port &rarr; Properties &rarr; Details tab &rarr; look for &ldquo;USB port power capability&rdquo; or check your laptop&rsquo;s specifications.</p>
+                    <p class="detail">In update mode, LeShuffler draws about 7W (5V &times; 1.4A). Almost all USB-C ports supply 7.5W (5V &times; 1.5A) or 15W (5V &times; 3A), so a USB-C port is the reliable choice; a few announce only 4.5W, and if the machine will not stay on, treat that port as unsuitable and use another. Standard USB-A 2.0 ports deliver only 2.5W and USB-A 3.0 ports only 4.5W &mdash; neither is enough. USB-A ports that support BC&nbsp;1.2 can deliver 7.5W, which is sufficient; look for a small battery or lightning symbol beside the port.<br>To check the power rating of your USB ports on Windows: open Device Manager &rarr; Universal Serial Bus controllers &rarr; right-click your USB port &rarr; Properties &rarr; Details tab &rarr; look for &ldquo;USB port power capability&rdquo; or check your laptop&rsquo;s specifications.</p>
+                </div>
+
+                <div class="troubleshooting-item">
+                    <p class="issue">Machine lights up for a moment, then switches off</p>
+                    <ul>
+                        <li>The port is not supplying enough power. Move to a USB-C port, a USB-A charging port (BC&nbsp;1.2), or a powered hub with charging-capable ports.</li>
+                        <li>In normal play, always power LeShuffler from its own USB-C wall charger &mdash; never from a computer port or a hub. A hub is for updates only.</li>
+                    </ul>
+                </div>
+
+                <div class="troubleshooting-item">
+                    <p class="issue">How do I make sure my computer is compatible for updates?</p>
+                    <ul>
+                        <li>Check the port, not the specification. Processor, memory and disk make no difference to an update: any recent i5 with 8GB and an SSD is ample, and a second-hand machine is fine.</li>
+                        <li>Business models generally provide a more stable experience, because they can handle a broader range of peripherals than consumer laptops. Models such as the Dell Latitude, Lenovo ThinkPad T/P/X1, Dell Precision, HP ZBook and HP EliteBook fall in this category.</li>
+                        <li>This is only a guideline. The port is what decides: a consumer laptop with a proper USB-C port will usually work fine.</li>
+                    </ul>
                 </div>
 
                 <div class="troubleshooting-item">
